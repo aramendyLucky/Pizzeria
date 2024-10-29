@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pizzería La Sabrosa</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Script para el cambio de tema oscuro y traducción -->
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <!-- Encabezado con el menú de navegación y botones -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Botones para cambiar a modo oscuro y cambiar idioma -->
+      <div class="opciones">
+        <button id="modo-oscuro">Modo Oscuro</button>
+        <button id="cambiar-idioma">EN</button>
+      </div>
+    </header>
+
+    <!-- Sección principal -->
+    <main>
+      <section id="inicio">
+        <h1>Bienvenidos a Pizzería La Sabrosa</h1>
+        <p>Las mejores pizzas artesanales a solo un clic de distancia.</p>
+      </section>
+
+      <!-- Sección del catálogo de pizzas -->
+      <section id="catalogo">
+        <h2>Nuestro Catálogo de Pizzas</h2>
+        <div class="catalogo-pizzas">
+          <!-- Pizza 1 -->
+          <div class="pizza">
+            <img src="img/01-maragarita.jpg" alt="Pizza Margarita" />
+            <h3>Pizza Margarita (Cód: P01)</h3>
+            <p>Tomate, mozzarella fresca, albahaca.</p>
+            <button>Agregar al carrito</button>
+          </div>
+          <!-- Pizza 2 -->
+          <div class="pizza">
+            <img src="img/02-pepperoni.jpg" alt="Pizza Pepperoni" />
+            <h3>Pizza Pepperoni (Cód: P02)</h3>
+            <p>Salami pepperoni, mozzarella, salsa de tomate.</p>
+            <button>Agregar al carrito</button>
+          </div>
+          <!-- Pizza 3 -->
+          <div class="pizza">
+            <img src="img/03-cuatro quesos.jpg" alt="Pizza Cuatro Quesos" />
+            <h3>Pizza Cuatro Quesos (Cód: P03)</h3>
+            <p>Parmesano, mozzarella, gorgonzola, ricotta.</p>
+            <button>Agregar al carrito</button>
+          </div>
+          <!-- Pizza 4 -->
+          <div class="pizza">
+            <img src="img/04-hawaiana.jpg" alt="Pizza Hawaiana" />
+            <h3>Pizza Hawaiana (Cód: P04)</h3>
+            <p>Jamón, piña, mozzarella.</p>
+            <button>Agregar al carrito</button>
+          </div>
+          <!-- Pizza 5 -->
+          <div class="pizza">
+            <img src="img/05-vegetariana.jpg" alt="Pizza Vegetariana" />
+            <h3>Pizza Vegetariana (Cód: P05)</h3>
+            <p>Pimientos, champiñones, cebolla, tomate, mozzarella.</p>
+            <button>Agregar al carrito</button>
+          </div>
+          <!-- Pizza 6 -->
+          <div class="pizza">
+            <img src="img/06-bbq pollo.jpg" alt="Pizza BBQ Pollo" />
+            <h3>Pizza BBQ Pollo (Cód: P06)</h3>
+            <p>Pollo a la parrilla, salsa BBQ, cebolla, mozzarella.</p>
+            <button>Agregar al carrito</button>
+          </div>
+          <!-- Pizza 7 -->
+          <div class="pizza">
+            <img src="img/07-napolitana.jpg" alt="Pizza Napolitana" />
+            <h3>Pizza Napolitana (Cód: P07)</h3>
+            <p>Tomate, mozzarella, anchoas, albahaca, ajo.</p>
+            <button>Agregar al carrito</button>
+          </div>
+          <!-- Pizza 8 -->
+          <div class="pizza">
+            <img src="img/08-mexicana.jpg" alt="Pizza Mexicana" />
+            <h3>Pizza Mexicana (Cód: P08)</h3>
+            <p>Carne molida, jalapeños, tomate, mozzarella, cebolla.</p>
+            <button>Agregar al carrito</button>
+          </div>
+          <!-- Pizza 9 -->
+          <div class="pizza">
+            <img src="img/09-carbonara.jpg" alt="Pizza Carbonara" />
+            <h3>Pizza Carbonara (Cód: P09)</h3>
+            <p>Crema, panceta, huevo, parmesano, mozzarella.</p>
+            <button>Agregar al carrito</button>
+          </div>
+          <!-- Pizza 10 -->
+          <div class="pizza">
+            <img src="img/10-atun.jpg" alt="Pizza de Atún" />
+            <h3>Pizza de Atún (Cód: P10)</h3>
+            <p>Atún, cebolla, tomate, mozzarella.</p>
+            <button>Agregar al carrito</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contenedor para el carrito de compras -->
+      <section id="carrito">
+        <h2>Carrito de compras</h2>
+        <div id="lista-carrito">
+          <!-- Aquí aparecerán los elementos agregados al carrito -->
+          <p>El carrito está vacío</p>
+        </div>
+        <button id="vaciar-carrito">Vaciar carrito</button>
+
+        <!-- Botones para proceder al pago o contactar por WhatsApp -->
+        <div id="acciones-carrito">
+          <button id="pagar">Proceder al Pago</button>
+          <a id="whatsapp" href="#" target="_blank"
+            >Enviar pedido por WhatsApp</a
+          >
+        </div>
+      </section>
+
+      <!-- Sección del formulario de contacto -->
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>&copy; 2024 Pizzería La Sabrosa. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
